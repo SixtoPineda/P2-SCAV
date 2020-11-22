@@ -19,7 +19,7 @@
 ### EJERCICIO-2
 #### ***Python: Rename the 5 quality outputs***
 
-<p align="justify">Para este ejercicio reciclé código del <em>Seminario 2</em>:</p><p align="center"><em>ffmpeg -i {name_video}.mp4 -vf scale={scaleValue[i]} {nameVideo[i]}.mp4 </em></p><p align="justify">Donde todo <em>name_video</em> hace referencia al nombre del video con el que quiere trabajar el usuario y <em>nameVideo[i]</em> hace referencia a la array contenedora de todos los nombres dados por el usuario para cada uno de los videos con distinta resolución.</p><p align="justify">Fuente: <em>Seminario 2</em></p>
+<p align="justify">Para este ejercicio reciclé código del <em>Seminario 2</em>:</p><p align="center"><em>ffmpeg -i {name_video}.mp4 -vf scale={scaleValue[i]} {nameVideo[i]}.mp4 </em></p><p align="justify">Donde <em>name_video</em> hace referencia al nombre del video con el que quiere trabajar el usuario y <em>nameVideo[i]</em> representa la array contenedora de todos los nombres dados por el usuario para cada uno de los videos con distinta resolución.</p><p align="justify">Fuente: <em>Seminario 2</em></p>
 
 ##### **Resultados**
 
@@ -32,19 +32,22 @@
 ### EJERCICIO-3
 #### ***Python: Resize of any input given***
 
-<p align="justify">Igual que en la práctica 1 y el seminario 2 escalando el input (video o imagen) podemos cambiar la resolución de éstos. Por ello, con el siguiente comando podemos redimensionar cualquier archivo de entrada: </p><p align="center"><em>ffmpeg -i {in_file} -vf <strong>scale={width}:{height}</strong> {width}x{height}-{in_file}</em></p><p align="justify">Como podemos ver, <em>in_file</em> hace referencia al archivo de entrada del usuario y, <em>width y height</em> son la nueva resolución del archivo <em>WIDTHxHEIGHT</em>. </p><p align="justify">Fuente: <em>Práctica 1 y Seminario 2</em></p>
-
-##### **Comando + Terminal**
-<p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/S2-SCAV/blob/main/EJERCICIO-3/1280x720.png" width="600"/>
-</p>
+<p align="justify">Igual que en la práctica 1 y el seminario 2 escalando el input (video o imagen) podemos cambiar la resolución de éstos. Por ello, con el siguiente comando podemos redimensionar cualquier archivo de entrada: </p><p align="center"><em>ffmpeg -i {in_file} -vf <strong>scale={width}:{height}</strong> {width}x{height}-{in_file}</em></p><p align="justify">Observamos que <em>in_file</em> hace referencia al archivo de entrada del usuario y, <em>width y height</em> son la nueva resolución del archivo <em>WIDTHxHEIGHT</em>. </p><p align="justify">Fuente: <em>Práctica 1 y Seminario 2</em></p>
 
 ##### **Resultados**
 
-<p align="center"> Link resultado del video 1280X720 (Mi Youtube): https://youtu.be/-zjsgdHLAMk</p>
-<p align="center"> Link resultado del video 640X480 (Mi Youtube): https://youtu.be/qdyaH8BuRuA</p>
-<p align="center"> Link resultado del video 360X240 (Mi Youtube): https://youtu.be/oTOrATpGNek</p>
-<p align="center"> Link resultado del video 160X120 (Mi Youtube): https://youtu.be/qquzqcsQgkA</p>
+###### **IMAGEN**
+<p align="center">
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_img_ej_3.png" width="600"/>
+</p>
+
+###### **https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_video_ej_3.png**
+<p align="center">
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_img_ej_3.png" width="600"/>
+</p>
+
+
+
 
 <p align="justify">Como podemos ver en ambas captura, según los datos dados por el usuario, obtenemos la salida reescalada correspondiente.</p>
 
