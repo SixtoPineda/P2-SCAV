@@ -8,14 +8,11 @@
 
 <p align="justify">Con el fin de mostrar tres de los datos más importantes que contiene el container procedí a ejecutar un comando desde el terminal usando <em>ffmpeg</em>. Este comando lo encontré en la própia página de <em>FFmpeg</em>:</p><p align="center"><em>ffprobe -v error -show_entries <strong>format=bit_rate:format=duration:stream=codec_long_name</strong> -of default=noprint_wrappers=1 {archivo}</em></p><p align="justify">Donde podemos ver que mostramos la información del bitrate del video, su duración, y el tipo de codec, donde se mostrará el codec del video y del audio que contiene éste. </p><p align="justify">Fuente:<br>https://trac.ffmpeg.org/wiki/FFprobeTips</p>
 
-##### **Comando + Terminal FALTA**
+##### **Resultados**
+
 <p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/S2-SCAV/blob/main/EJERCICIO-1/BBB_10s.png" width="600"/>
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-1/result_ej_1.png" width="600"/>
 </p>
-
-##### **Resultados FALTA**
-
-<p align="center"> Link resultado del video (Mi Youtube): https://youtu.be/WndicksBocw</p>
 
 <p align="justify">Como podemos ver en la captura, se nos muestra el tipo de codec del video: h.264, el codec del audio: AAC, la duración: 10.6s, y el bitRate: 6737785 bps. </p>
 
