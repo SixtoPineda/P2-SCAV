@@ -38,12 +38,12 @@
 
 ###### **IMAGEN**
 <p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_img_ej_3.png" width="400"/>
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_img_ej_3.png" width="600"/>
 </p>
 
 ###### **VIDEO**
 <p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_video_ej_3.png" width="400"/>
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_video_ej_3.png" width="600"/>
 </p>
 
 
@@ -71,7 +71,7 @@
 
 ###### **VIDEO**
 <p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-4/result_video_ej_4.png" width="400"/>
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-4/result_video_ej_4.png" width="600"/>
 </p>
 
 ###### **AUDIO**
@@ -81,7 +81,7 @@
 
 ###### **VIDEO SIN AUDIO**
 <p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-4/result_videosinAudio_ej_4.png" width="400"/>
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-4/result_videosinAudio_ej_4.png" width="500"/>
 </p>
 
 <p align="justify">Como podemos ver en las capturas, el archivo final corresponde con la solicitud de cambio de codec por parte del usuario. </p>
