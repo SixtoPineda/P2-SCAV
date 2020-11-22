@@ -41,9 +41,9 @@
   <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_img_ej_3.png" width="600"/>
 </p>
 
-###### **https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_video_ej_3.png**
+###### **VIDEO**
 <p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_img_ej_3.png" width="600"/>
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_video_ej_3.png" width="600"/>
 </p>
 
 
