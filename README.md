@@ -38,12 +38,12 @@
 
 ###### **IMAGEN**
 <p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_img_ej_3.png" width="600"/>
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_img_ej_3.png" width="400"/>
 </p>
 
 ###### **VIDEO**
 <p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_video_ej_3.png" width="600"/>
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-3/result_video_ej_3.png" width="400"/>
 </p>
 
 
@@ -56,22 +56,33 @@
 
 <p align="justify">Con el fin de dar la posibilidad de cambiar el tipo de codec del archivo del usuario, daremos la posibilidad de que éste introduzca un video con audio, un audio o un video sin audio. A partir de aquí, crearemos condicionales según el tipo de archivo introducido. Con el fin de poder saber que tipo de archivo ha sido introducido, usaremos una función de <em>subprocess</em> llamada <em>check_output</em>, que nos devuelve la salida del comando realizado. Por esta razón ejecutaremos el comando:<br><em>ffprobe -v error -show_entries stream=codec_type -of default=noprint_wrappers=1 {in_file}</em><br> y de esta forma saber de que tipo de codec se trata. Si la salida de este archivo es que tenemos un codec de tipo audio solo, el archivo es un audio, si se trata de video solo, se tratará de un video sin audio, pero si nos devuelve dos tipos de codec, audio y video, significará que se nos pasó un video con canal de audio también.<br>A partir de aquí ya sabemos con que tipo de archivo nos encontramos, por lo tanto, podemos empezar a mostrar las opciones para cada caso:</p>
 
-<p align="justify">&nbsp;- Video (video y audio): en este caso daremos la posibilidad de cambiar el codec del video únicmanete, el audio o de ambos.<br>&nbsp;&nbsp;&nbsp;·Codec video: Damos la opción de cambiar entre MPEG-1, MPEG-2, MPEG4 y h.264. Realicaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:v <strong>new_codec</strong> MPEG1_{in_file}</p>
+<p align="justify">&nbsp;- Video (video y audio): en este caso daremos la posibilidad de cambiar el codec del video únicamente, el audio o de ambos.<br>&nbsp;&nbsp;&nbsp;·Codec video: Damos la opción de cambiar entre MPEG-1, MPEG-2, MPEG4 y h.264. Realizaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:v <strong>new_codec</strong> MPEG1_{in_file}</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;·Codec audio:  Damos la opción de cambiar entre MP3 y AAC. Realicaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -acodec <strong>new_codec</strong> -vcodec copy MP3_{in_file}</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;·Codec video y audio:  Damos la opción de cambiar entre todas las posibilidades anteriores. Realicaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:v <strong>video_codec</strong> -c:a <strong>audio_codec</strong> MPEG1_MP3_{in_file}</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;·Codec video y audio:  Damos la opción de cambiar entre todas las posibilidades anteriores. Realizaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:v <strong>video_codec</strong> -c:a <strong>audio_codec</strong> MPEG1_MP3_{in_file}</p>
 
-<p align="justify">&nbsp;- Audio: en este caso daremos la posibilidad de cambiar el codec del audio únicmanete. <br>&nbsp;&nbsp;&nbsp;·Codec audio: Damos la opción de cambiar entre MP3 y AAC. Realicaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:a <strong>new_codec</strong> output.mp3</p>
+<p align="justify">&nbsp;- Audio: en este caso daremos la posibilidad de cambiar el codec del audio únicamente. <br>&nbsp;&nbsp;&nbsp;·Codec audio: Damos la opción de cambiar entre MP3 y AAC. Realizaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:a <strong>new_codec</strong> output.mp3</p>
 
-<p align="justify">&nbsp;- Video sin audio: en este caso daremos la posibilidad de cambiar el codec del video únicmanete. <br>&nbsp;&nbsp;&nbsp;·Codec video: Damos la opción de cambiar entre MPEG-1, MPEG-2, MPEG4 y h.264. Realicaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:v <strong>new_codec</strong> MPEG1_{in_file}</p>
+<p align="justify">&nbsp;- Video sin audio: en este caso daremos la posibilidad de cambiar el codec del video únicamente. <br>&nbsp;&nbsp;&nbsp;·Codec video: Damos la opción de cambiar entre MPEG-1, MPEG-2, MPEG4 y h.264. Realizaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:v <strong>new_codec</strong> MPEG1_{in_file}</p>
 
 
 ##### **Resultados**
 
-<p align="center"> Video con audio original (Mi Youtube): https://youtu.be/WndicksBocw</p>
-<p align="center"> Link resultado del video con canal audio mono (Mi Youtube): https://youtu.be/WYFJUyrX-4A</p>
-<p align="center"> Link resultado del video con canal audio mono y diferente audio codec (MP3) (Mi Youtube): https://youtu.be/wAuYziIrgJw</p>
+###### **VIDEO**
+<p align="center">
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-4/result_video_ej_4.png" width="400"/>
+</p>
+
+###### **AUDIO**
+<p align="center">
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-4/result_audio_ej_4.png" width="400"/>
+</p>
+
+###### **VIDEO SIN AUDIO**
+<p align="center">
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-4/result_videosinAudio_ej_4.png" width="400"/>
+</p>
 
 <p align="justify">Como podemos ver en las capturas, el archivo final corresponde con la solicitud de cambio de codec por parte del usuario. </p>
 
