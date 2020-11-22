@@ -71,7 +71,7 @@
 
 ###### **VIDEO**
 <p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-4/result_video_ej_4.png" width="600"/>
+  <img align="center" src="https://github.com/SixtoPineda/P2-SCAV/blob/main/EJERCICIO-4/result_video_ej_4.png" width="900"/>
 </p>
 
 ###### **AUDIO**
