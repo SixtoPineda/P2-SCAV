@@ -59,19 +59,7 @@
 
 <p align="justify">Con el fin de dar la posibilidad de cambiar el tipo de codec del archivo del usuario, daremos la posibilidad de que éste introduzca un video con audio, un audio o un video sin audio. A partir de aquí, crearemos condicionales según el tipo de archivo introducido. Con el fin de poder saber que tipo de archivo ha sido introducido, usaremos una función de <em>subprocess</em> llamada <em>check_output</em>, que nos devuelve la salida del comando realizado. Por esta razón ejecutaremos el comando:<br><em>ffprobe -v error -show_entries stream=codec_type -of default=noprint_wrappers=1 {in_file}</em><br> y de esta forma saber de que tipo de codec se trata. Si la salida de este archivo es que tenemos un codec de tipo audio solo, el archivo es un audio, si se trata de video solo, se tratará de un video sin audio, pero si nos devuelve dos tipos de codec, audio y video, significará que se nos pasó un video con canal de audio también.<br>A partir de aquí ya sabemos con que tipo de archivo nos encontramos, por lo tanto, podemos empezar a mostrar las opciones para cada caso:</p>
 
-<div class="seccion" id="zorro" >
-<h1>El zorro</h1>
-<p>En esta sección discutiremos sobre los aspectos menos conocidos del zorro.
-... bla, bla, bla ...
-<div class="subseccion" id="zorro-habitat" >
-<h2>Hábitat</h2>
-<p>El zorro necesita un nido en donde poner sus huevos, de ahí que necesite árboles.
-...bla, bla, bla...
-</div>
-</div>
-
-
-<p align="justify">- Video (video y audio): en este caso daremos la posibilidad de cambiar el codec del video únicmanete, el audio o de ambos.<br>· </p>
+<p align="justify">&- Video (video y audio): en este caso daremos la posibilidad de cambiar el codec del video únicmanete, el audio o de ambos.<br>· </p>
 
 
 
