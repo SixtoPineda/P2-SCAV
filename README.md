@@ -1,7 +1,7 @@
 # ***SCAV: P2-Python & Video***
 
 ## **EJERCICIOS**
-<p align="justify">Mediante la fuente:<br>"https://www.askpython.com/python/examples/python-user-input#:~:text=Python%20user%20input%20from%20the,value%20entered%20by%20the%20user"<br>Sabemos como usar la función <em>input()</em> para pedir al usuario que introduzca una cierta información y guardar ésta en una variable: <em>valueInfo = input("Introduzca la info: ")</em></p>
+<p align="justify">Mediante la fuente:</p><p align="justify">"https://www.askpython.com/python/examples/python-user-input#:~:text=Python%20user%20input%20from%20the,value%20entered%20by%20the%20user"</p><p align="justify">Sabemos como usar la función <em>input()</em> para pedir al usuario que introduzca una cierta información y guardar ésta en una variable:</p><p align="justify"> <em>valueInfo = input("Introduzca la info: ")</em></p>
 
 ### EJERCICIO-1
 #### ***Python: Data from the container***
