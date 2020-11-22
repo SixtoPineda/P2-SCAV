@@ -3,6 +3,8 @@
 ## **EJERCICIOS**
 <p align="justify">Mediante la fuente:</p><p align="center">"https://www.askpython.com/python/examples/python-user-input#:~:text=Python%20user%20input%20from%20the,value%20entered%20by%20the%20user"</p><p align="justify">Sabemos como usar la función <em>input()</em> para pedir al usuario que introduzca una cierta información y guardar ésta en una variable:</p><p align="center"> <em>valueInfo = input("Introduzca la info: ")</em></p>
 
+**IMPORTANTE: cuando ejecutamos los fichero python, dado que se pide al ususario cierta interacción, una vez puesto en ejecución el script, debemos presionar F5 para poder ver la pantalla emergente (cmd) donde poder introducir la información y trabajar con el script.**
+
 ### EJERCICIO-1
 #### ***Python: Data from the container***
 
@@ -90,50 +92,9 @@
 ### EJERCICIO-5
 #### ***Python: Integrate previous exercises into one script***
 
-<p align="justify">Con el fin de poder realizar todos los ejercicios anteriores, procedí a buscar la forma de ejecutar desde el fichero python un comando como si fuera el terminal y poder usar <em>ffmpeg</em>. Para ello me ayudé de la conversación de la página <em>StackOverflow</em>:</p><p align="center"><em><strong>subprocess.run</strong>(f"<strong>Comando FFmpeg</strong>", shell=True)</em></p><p align="justify">Donde si nosotros colocamos dentro de ese espacio marcado el comando que anteriormente poníamos desde el terminal, se realizará el mismo proceso y obtendremos los resultados para cada uno de los ejercicios. Cabe decir que lo que nos permite ejecutar estos comandos es la función <em>run</em> de la libreria <em>subprocess</em>. </p><p align="justify">Fuente:<br>https://stackoverflow.com/questions/59279463/how-to-cut-video-properly-with-this-ffmpeg-python-script</p>
+<p align="justify">Con la finalidad de integrar todos los ejercicios anteriores realizamos lo siguiente:</p>
+<p align="justify">Haremos un menú. En éste le pedimos que el usuario nos de una archivo con el que trabajar. Comprobamos si se trata de un video con audio o sin, una imagen o un audio. A partir de aquí le mostramos por pantalla la información que consideramos importante según el archivo: Audio (codec), Video con audio (codecs y resolución), Video sin audio (codec y resolución) e imagen (resolución).<br>Hecho esto le preguntamos al usuario que quiere realizar según el archivo dado. En el caso de ser un video, podemos modificar su/s codec/s o cambiar la resolucón, en el audio cambiar únicamente el codec o en el caso de la imagen cambiar la resolución. A partir de aquí integramos los comandos anteriormente mencionados según las opciones escogidas por el usuario.<br>Cabe decir que todo esto se integra dentro de un bucle de tipo <em>while</em> donde el usuario pude escoger salir del menú o contiunar pasando archivos y modificándolos.<br><br>Dentro de la carpete <em>EJERCICIO-5</em> he añadido el video BBB.mp4 que hace referncia al video original de 10 segundos, el video bbb.mp4 que representa el video sin audio, una imagen img.jpg con la que también poder probar el código, y un audio audio.wav con el que poder trabajar. </p>
 
-<p align="justify"></p>
-
-<p align="justify">Importamos la librería <em>subprocess</em> y creamos una variable con el nombre del video original a partir del cual realizar todos los ejercicios. Cabe decir que el primer ejercicio se realizará a partir del original propuesto, pero el segundo, tercero y cuarto se realizarán a partir del video de 10 segundos resultante del ejericio 1. </p>
-
-```python
-imports
-```
-<p align="justify">Para el primer ejercicio </p>
-
-```python
-####################### EJERCICIO-1 ################################
-
-```
-<p align="justify">En el segundo ejercicio, </p>
-
-```python
-
-####################### EJERCICIO-2 ################################
-
-```
-<p align="justify">Para el ejercicio 3, </p>
-
-```python
-
-####################### EJERCICIO-3 ################################
+##### **Script en EJERCICIO-5 COMO EJ_5.py**
 
 
-
-```
-<p align="justify">Para el ejercicio 4,</p>
-
-```python
-
-####################### EJERCICIO-4 ################################
-
-
-```
-
-
-##### **Script**
-```python
-CÓDIGO ENTERO
-```
-
-<p align="justify">Si ejecutamos este código en un fichero python veremos que al momento empiezan a aparecer los resultados de cada uno de los procesos en la carpeta donde se ha ejecutado el script.</p>
