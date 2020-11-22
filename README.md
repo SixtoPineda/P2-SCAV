@@ -18,6 +18,7 @@
 <p align="center"> Link resultado del video (Mi Youtube): https://youtu.be/WndicksBocw</p>
 
 <p align="justify">Como podemos ver en la captura, se nos muestra el tipo de codec del video: h.264, el codec del audio: AAC, la duración: 10.6s, y el bitRate: 6737785 bps. </p>
+
 ### EJERCICIO-2
 #### ***Python: Rename the 5 quality outputs***
 
