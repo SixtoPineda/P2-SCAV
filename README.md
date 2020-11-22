@@ -67,35 +67,7 @@
 
 <p align="justify">&nbsp;- Audio: en este caso daremos la posibilidad de cambiar el codec del audio únicmanete. <br>&nbsp;&nbsp;&nbsp;·Codec audio: Damos la opción de cambiar entre MP3 y AAC. Realicaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:a <strong>new_codec</strong> output.mp3</p>
 
-<p align="justify">&nbsp;- Video sin audio: en este caso daremos la posibilidad de cambiar el codec del video únicmanete. <br>&nbsp;&nbsp;&nbsp;·Codec video: Damos la opción de cambiar entre MPEG-1, MPEG-2, MPEG4 y h.264. Realicaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:v <strong>mpeg1video</strong> MPEG1_{in_file}</p>
-
-
-
-##### **Antes y después de cambiar tipo de canal y codificación del audio**
-###### **Antes**
-<p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/S2-SCAV/blob/main/EJERCICIO-4/propiedades_original.png" width="500" high="700"/>
-</p>
-
-###### **Después**
-
-<p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/S2-SCAV/blob/main/EJERCICIO-4/propiedades_mono_mp3_final.png" width="500" high="700"/>
-</p>
-
-##### **Comandos**
-
-###### **Pasamos a mono**
-
-<p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/S2-SCAV/blob/main/EJERCICIO-4/pasarAMono.png" width="800"/>
-</p>
-
-###### **Cambiamos audio codec a mp3**   
-   
-<p align="center">
-  <img align="center" src="https://github.com/SixtoPineda/S2-SCAV/blob/main/EJERCICIO-4/pasarA-MP3.png" width="800"/>
-</p>
+<p align="justify">&nbsp;- Video sin audio: en este caso daremos la posibilidad de cambiar el codec del video únicmanete. <br>&nbsp;&nbsp;&nbsp;·Codec video: Damos la opción de cambiar entre MPEG-1, MPEG-2, MPEG4 y h.264. Realicaremos el cambio con el comando:</p><p align="center">ffmpeg -i {in_file} -c:v <strong>new_codec</strong> MPEG1_{in_file}</p>
 
 
 ##### **Resultados**
@@ -104,7 +76,7 @@
 <p align="center"> Link resultado del video con canal audio mono (Mi Youtube): https://youtu.be/WYFJUyrX-4A</p>
 <p align="center"> Link resultado del video con canal audio mono y diferente audio codec (MP3) (Mi Youtube): https://youtu.be/wAuYziIrgJw</p>
 
-<p align="justify">Como podemos escuchar, si comparamos el video original con el que tiene un único canal, se aprecia claramente con auriculares como se pierde esa sensación espacial que nos da el audio multicanal 5.1 Surround que tenía el video original, como hemos podido ver en la captura de las propiedades el video.<br>En cambiar también el tipo de codificación del audio, las diferencias apenas son notorias.</p>
+<p align="justify">Como podemos ver en las capturas, el archivo final corresponde con la solicitud de cambio de codec por parte del usuario. </p>
 
 
 ### EJERCICIO-5
